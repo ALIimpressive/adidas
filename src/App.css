@@ -1,38 +1,539 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* UP NAVBAR */
+#upnavbar {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+#upnav {
+  position: fixed;
+  width: 100%;
+  margin: 30px 0;
+  z-index: 10;
+  background-color: #fff;
+}
+.upnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.upnav img {
+  display: flex;
+  align-items: center;
+}
+.upnav-text {
+  display: flex;
+  align-items: center;
+  gap: 1pc;
+}
+.upnav-adm {
+  display: flex;
+  align-items: center;
+  gap: 1pc;
+}
+.upnav-adm input {
+  height: 15px;
+  border-radius: 10px;
+  padding-left: 30px;
+  width: 150px;
+}
+.serr {
+  position: relative;
+  position: absolute;
+  right: 412px;
+  bottom: 14px;
+}
+
+.upnav-text span h5 {
+  font-weight: 100;
+}
+
+/* UP NAVBAR */
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+/* sas */
+.tww {
+  width: 1438px;
+  height: 160px;
+  position: relative;
+  position: absolute;
+  left: 1px;
+  top: 380px;
+  z-index: -1;
+  animation: color-change-2x 2s linear infinite alternate both;
+  -webkit-animation: color-change-2x 2s linear infinite alternate both;
+}
+
+.navtwo-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+  padding-top: 95px;
+}
+.navtwo-text h4 {
+  font-weight: 100;
+}
+
+.navtwo-img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1pc;
+}
+.two-img {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1pc;
+  margin: 20px 0;
+}
+.jor:hover {
+  width: 200px;
+  height: 263px;
+  transition: 0.8s;
+}
+.jors {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 2pc;
+  width: 700px;
+  height: 263px;
+}
+/*  */
+@-webkit-keyframes color-change-2x {
+  0% {
+    color: #19dcea;
+  }
+  100% {
+    color: #b22cff;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* NAVTWO */
+/* ADMIN */
+#admin {
+  margin-right: 200px;
+}
+.admin {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin: 80px 0;
+  gap: 3pc;
+  position: fixed;
+  width: 100%;
+  margin: 150px 0;
+}
+.admin input {
+  width: 450px;
+}
+/* btnbg */
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+/* btnbg */
+/* btn */
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+/* btn */
+.admin button {
+  color: #fff;
+  width: 477px;
+  height: 45px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  background: none;
+  border: none;
+  border-radius: 3px;
+  animation: color-change-2x 2s linear infinite alternate both;
+  -webkit-animation: color-change-2x 2s linear infinite alternate both;
+  -webkit-animation: color-change-2x 2s linear infinite alternate both;
+  animation: color-change-2x 2s linear infinite alternate both;
+}
+/* ADMIN */
+
+/* EDIT */
+.admsss {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.admsss button {
+  padding-right: 10px;
+}
+#card {
+  padding-left: 40px;
+}
+.card {
+  animation: color-change-2x 2s linear infinite alternate both;
+  -webkit-animation: color-change-2x 2s linear infinite alternate both;
+  border-radius: 5px;
+}
+.card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* EDIT */
+/* LENGTH */
+.leng {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#leng {
+  position: relative;
+  position: absolute;
+  top: 445px;
+}
+/* LENGTH */
+/* PAGINATION */
+.pagination {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 35px 0;
+}
+/* PAGINATION */
+/* CARD */
+.list {
+  overflow-y: scroll;
+  height: 700px;
 }
 
-.App-link {
-  color: #61dafb;
+/* CARD */
+/* FOOTER */
+#foter {
+  background-color: rgb(255, 247, 0);
+}
+.foter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+}
+.foter-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.foter button {
+  align-items: center;
+  background: none;
+  height: 35px;
+  border-radius: 0px;
+  background: #e0e0e0;
+  box-shadow: 8px 8px 10px #5a5a5a, -8px -8px 10px #ffffff;
+}
+.footer-text button:hover {
+  color: rgb(0, 0, 0);
+  background-color: aliceblue;
+}
+.foter h1 {
+  display: flex;
+  align-items: center;
+  background: none;
+}
+.fot {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 6pc;
+  margin: 20px 0;
+  margin-left: 80px;
+}
+#fod {
+  background-color: rgb(59, 59, 59);
+  padding: 10px 0;
+}
+.fod-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.fod-text h4 {
+  color: #fff;
+}
+.fods {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.fods h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+  color: #fff;
+}
+.lic {
+  background-color: #fff;
+  width: 1px;
+  height: 40px;
+}
+/* FOOTER */
+/* AVTORIZASIA */
+.joins {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.join {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
+
+.join h4 {
+  font-weight: 400;
+}
+
+.join input {
+  justify-content: flex-start;
+}
+
+.join-text h1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.join-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1pc;
+}
+
+.join-text input {
+  width: 480px;
+  height: 45px;
+  border-radius: 8px;
+  outline: none;
+  padding-left: 10px;
+  border: 1px solid;
+}
+
+.wero {
+  display: flex;
+  gap: 1pc;
+}
+
+.join button {
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(66, 100, 223);
+  color: #fff;
+  font-size: 15px;
+}
+.join button:hover {
+  background-color: rgb(20, 27, 53);
+  transition: 1s;
+}
+
+.six {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.s1 {
+  width: 210px;
+  height: 0.7px;
+  background-color: black;
+}
+
+.six h3 {
+  padding: 0 10px 0 10px;
+}
+
+/* 222 */
+
+.signs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 0;
+}
+
+.sign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.sign h4 {
+  font-weight: 400;
+}
+
+.sign input {
+  justify-content: flex-start;
+}
+
+.sign-text h1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.sign-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1pc;
+}
+
+.sign-text input {
+  width: 480px;
+  height: 45px;
+  border-radius: 8px;
+  outline: none;
+  padding-left: 10px;
+  border: 1px solid;
+}
+
+.weros {
+  display: flex;
+  gap: 1pc;
+}
+
+.sign button {
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(66, 100, 223);
+  color: #fff;
+  font-size: 15px;
+}
+.sign button:hover {
+  background-color: rgb(20, 27, 53);
+  transition: 1s;
+}
+
+.six {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.s1 {
+  width: 210px;
+  height: 0.7px;
+  background-color: black;
+}
+
+.six h3 {
+  padding: 0 10px 0 10px;
+}
+a {
+  text-decoration: none;
+}
+
+/* AVTORIZASIA */
