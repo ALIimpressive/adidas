@@ -13,6 +13,7 @@
   position: fixed;
   width: 100%;
   z-index: 10;
+  background-color: black;
 }
 #upnav {
   position: fixed;
@@ -49,7 +50,7 @@
 .serr {
   position: relative;
   position: absolute;
-  right: 412px;
+  right: 425px;
   bottom: 14px;
 }
 
@@ -60,18 +61,18 @@
 /* UP NAVBAR */
 @-webkit-keyframes color-change-2x {
   0% {
-    background: #19dcea;
+    background: #ffffff;
   }
   100% {
-    background: #b22cff;
+    background: gray;
   }
 }
 @keyframes color-change-2x {
   0% {
-    background: #19dcea;
+    background: #ffffff;
   }
   100% {
-    background: #b22cff;
+    background: gray;
   }
 }
 /* sas */
@@ -126,10 +127,10 @@
 /*  */
 @-webkit-keyframes color-change-2x {
   0% {
-    color: #19dcea;
+    background: #ffffff;
   }
   100% {
-    color: #b22cff;
+    background: gray;
   }
 }
 
@@ -215,20 +216,20 @@
 }
 /* btnbg */
 /* btn */
-@-webkit-keyframes color-change-2x {
+@-webkit-keyframes color-change {
   0% {
-    background: #19dcea;
+    background: #ff00ee;
   }
   100% {
-    background: #b22cff;
+    background: rgb(0, 221, 255);
   }
 }
-@keyframes color-change-2x {
+@keyframes color-change {
   0% {
-    background: #19dcea;
+    background: #ff00ee;
   }
   100% {
-    background: #b22cff;
+    background: rgb(0, 221, 255);
   }
 }
 /* btn */
@@ -241,10 +242,10 @@
   background: none;
   border: none;
   border-radius: 3px;
-  animation: color-change-2x 2s linear infinite alternate both;
-  -webkit-animation: color-change-2x 2s linear infinite alternate both;
-  -webkit-animation: color-change-2x 2s linear infinite alternate both;
-  animation: color-change-2x 2s linear infinite alternate both;
+  animation: color-change 2s linear infinite alternate both;
+  -webkit-animation: color-change 2s linear infinite alternate both;
+  -webkit-animation: color-change 2s linear infinite alternate both;
+  animation: color-change 2s linear infinite alternate both;
 }
 /* ADMIN */
 

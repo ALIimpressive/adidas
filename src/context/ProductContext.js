@@ -58,6 +58,11 @@ const ProductContext = ({ children }) => {
   }
 
   // PAGINATION
+  // DARK
+  let locDark = JSON.parse(localStorage.getItem("keyDark")) || false;
+  const [dark, setDark] = useState(locDark || false);
+  localStorage.setItem("keyDark", JSON.stringify(dark));
+  // DARK
   // FUNCTION
   //
   const values = {
@@ -74,6 +79,8 @@ const ProductContext = ({ children }) => {
     setData,
     favarite,
     setFavarite,
+    setDark,
+    dark,
   };
   //
   return (

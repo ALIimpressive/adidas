@@ -8,6 +8,8 @@ import SearchIcon from "@mui/icons-material/Search";
 import FingerprintIcon from "@mui/icons-material/Fingerprint";
 import { Link } from "react-router-dom";
 import { useProduct } from "../../context/ProductContext";
+import Brightness4Icon from "@mui/icons-material/Brightness4";
+import Brightness5Icon from "@mui/icons-material/Brightness5";
 import {
   Avatar,
   Box,
@@ -20,11 +22,10 @@ import {
 import { useAuthContext } from "../../context/AuthContext";
 const UpNavbar = () => {
   const [search, setSearch] = useState("");
-  const { data, setData, getProduct } = useProduct();
+  const { data, setData, getProduct, setDark, dark } = useProduct();
   const { user, logOut } = useAuthContext();
 
-  let advertising = ["FINAL HOURS OF UP ", "GET YOUR 20$ BONUS REWARD"];
-  const index = 0
+  let start = ["FINAL HOURS OF UP ", "GET YOUR 20$ BONUS REWARD"];
 
   function addSearch() {
     if (search.length === 0) {
@@ -65,7 +66,8 @@ const UpNavbar = () => {
     <div>
       <div
         style={{
-          backgroundColor: "black",
+          background: dark ? "white" : "",
+          transition: "0.3s",
         }}
         id="upnavbar"
       >
@@ -86,15 +88,15 @@ const UpNavbar = () => {
                 paddingLeft: "183px",
               }}
             >
-              {/* {setTimeout(() => {
-                console.log(advertising[index]);
-                index = (index + 1) % advertising.length
-              }, 1000)} */}
+              {start}
             </h4>
           </div>
         </div>
       </div>
-      <div id="upnav">
+      <div
+        style={{ background: dark ? "black" : "", transition: "0.3s" }}
+        id="upnav"
+      >
         <div className="container">
           <div className="upnav">
             <Link to="/admin">
@@ -110,6 +112,8 @@ const UpNavbar = () => {
                   style={{
                     width: "30px",
                     height: "30px",
+                    background: dark ? "white" : "",
+                    borderRadius: "100%",
                   }}
                 />
               </button>
@@ -128,9 +132,9 @@ const UpNavbar = () => {
               </div>
             </Link>
             <div className="upnav-text">
-              <h5>MEN</h5>
-              <h5>WOMEN</h5>
-              <h5>KIDS</h5>
+              <h5 style={{ color: dark ? "white" : "" }}>MEN</h5>
+              <h5 style={{ color: dark ? "white" : "" }}>WOMEN</h5>
+              <h5 style={{ color: dark ? "white" : "" }}>KIDS</h5>
               <span
                 style={{
                   display: "flex",
@@ -138,11 +142,18 @@ const UpNavbar = () => {
                   fontWeight: "100",
                 }}
               >
-                <h5>SALE</h5>
-                <h5>3 STRIPE LIFE</h5>
+                <h5 style={{ color: dark ? "white" : "" }}>SALE</h5>
+                <h5 style={{ color: dark ? "white" : "" }}>3 STRIPE LIFE</h5>
               </span>
             </div>
-            <div className="upnav-adm">
+            <div
+              style={{
+                background: dark ? "white" : "",
+                width: "335px",
+                borderRadius: "10px",
+              }}
+              className="upnav-adm"
+            >
               <TextField
                 id="outlined-size-small"
                 placeholder="Search"
@@ -157,7 +168,20 @@ const UpNavbar = () => {
               <Link to="/favor">
                 <FavoriteBorderIcon sx={{ color: "black" }} />
               </Link>
-              <ShoppingBagIcon />
+              {/* dark */}
+              <button
+                onClick={() => setDark(!dark)}
+                style={{
+                  background: "none",
+                  border: "none",
+                  backgroundColor: dark ? "white" : "",
+                  borderRadius: "100%",
+                }}
+              >
+                {dark ? <Brightness5Icon /> : <Brightness4Icon />}
+              </button>
+              {/* dark */}
+              {/* <ShoppingBagIcon /> */}
               <Box sx={{ flexGrow: 0, width: "30px" }}>
                 <Tooltip title={user ? user.email : "user email"}>
                   <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
